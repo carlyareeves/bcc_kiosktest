@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-size: 20px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --neutral-OffWhite: rgba(248, 248, 248, 1);
+  --neutral-BlueGrey: rgba(238, 242, 245, 1);
+  --neutral-DarkGrey: rgba(51, 51, 51, 1);
+  --neutral-Black: rgba(0, 0, 0, 1);
+  --primary-Blue:rgba(0, 103, 177, 1);
+  --primary-Yellow:rgba(255, 210, 0, 1);
+  --secondary-DeepOcean: rgba(0, 46, 83, 1);
+  --secondary-Mist: rgba(248, 252, 255, 1);
+  --secondary-Rockpool: rgba(236, 245, 251, 1);
+  --feedbackBg-WarningLight: rgba(251, 250, 209, 1);
+  --feedbackBg-Warning: rgba(236, 232, 26, 1)
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

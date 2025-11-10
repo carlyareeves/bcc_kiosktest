@@ -1,5 +1,5 @@
 import { Paper, Stack, Chip, Box, Typography } from "@mui/material";
-import QR from "../assets/QR_Code_example.svg";
+import QR from "/src/assets/QR_Code_example.svg";
 
 function AlertSheet() {
   const AlertTitle = "Initial Minor Flood Warning for the Upper Brisbane River";

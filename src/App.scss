@@ -22,6 +22,10 @@ body {
 .promo_wrapper {
   grid-area: promo;
   background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ui_wrapper {
   grid-area: content;

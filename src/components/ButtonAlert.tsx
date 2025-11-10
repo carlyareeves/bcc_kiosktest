@@ -19,10 +19,14 @@ function ButtonAlert() {
           aspectRatio: "1 / 1",
           py: 2,
           borderRadius: "0px",
-          bgcolor: "blue",
+          backgroundColor: isVisible
+            ? "var(--feedbackBg-Warning)"
+            : "var(--feedbackBg-WarningLight)",
         }}
       >
-        <Icon sx={{ fontSize: 80, color: "var(--secondary-Mist)" }}>flood</Icon>
+        <Icon sx={{ fontSize: 80, color: "var(--neutral-DarkGrey)" }}>
+          flood
+        </Icon>
       </Button>
 
       <div

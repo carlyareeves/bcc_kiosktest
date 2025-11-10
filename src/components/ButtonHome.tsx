@@ -8,7 +8,6 @@ function ButtonHome() {
     <Button
       component={RouterLink}
       to="/"
-      variant="contained"
       sx={{
         position: "absolute",
         borderRadius: 999,
@@ -17,6 +16,8 @@ function ButtonHome() {
         transformOrigin: "center left",
         textTransform: "none",
         fontSize: "48px",
+        color: "white",
+        backgroundColor: "black",
         boxShadow: "none",
         "&:hover": { boxShadow: "none" },
       }}

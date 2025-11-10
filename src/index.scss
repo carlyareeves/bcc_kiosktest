@@ -19,7 +19,8 @@
   --secondary-Mist: rgba(248, 252, 255, 1);
   --secondary-Rockpool: rgba(236, 245, 251, 1);
   --feedbackBg-WarningLight: rgba(251, 250, 209, 1);
-  --feedbackBg-Warning: rgba(236, 232, 26, 1)
+  --feedbackBg-Warning: rgba(236, 232, 26, 1);
+  --feedbackContent-Warning:rgba(116, 114, 0, 1);
 }
 
 body {
@@ -29,6 +30,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+a{text-decoration: none;}
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -1,6 +1,13 @@
 import { Link as RouterLink } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import { Card, CardContent, Stack, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Icon,
+  Stack,
+  Typography,
+} from "@mui/material";
 
 function Home() {
   return (
@@ -20,9 +27,25 @@ function Home() {
           Explore things to do and see around you
         </Typography>
       </Stack>
-      <Grid container spacing={2} sx={{ padding: "80px" }}>
+      <Grid
+        container
+        spacing={2}
+        sx={{ padding: "80px", alignItems: "stretch" }}
+      >
         <Grid size={4} component={RouterLink} to="/events">
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ height: "300px" }}>
+            <CardMedia
+              sx={{
+                height: 140,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+                stadium
+              </Icon>
+            </CardMedia>
             <CardContent>
               <Typography variant="h4" align="center">
                 Events
@@ -34,7 +57,19 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/transport">
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ height: "300px" }}>
+            <CardMedia
+              sx={{
+                height: 140,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+                boat_bus
+              </Icon>
+            </CardMedia>
             <CardContent>
               <Typography variant="h4" align="center">
                 Transport
@@ -46,7 +81,19 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/guides">
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ height: "300px" }}>
+            <CardMedia
+              sx={{
+                height: 140,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+                directions_walk
+              </Icon>
+            </CardMedia>
             <CardContent>
               <Typography variant="h4" align="center">
                 Walking guides
@@ -58,7 +105,19 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/facilities">
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ height: "300px" }}>
+            <CardMedia
+              sx={{
+                height: 140,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+                family_restroom
+              </Icon>
+            </CardMedia>
             <CardContent>
               <Typography variant="h4" align="center">
                 Facilities

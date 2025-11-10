@@ -1,4 +1,5 @@
 import { Paper, Stack, Chip, Box, Typography } from "@mui/material";
+import QR from "../assets/QR_Code_example.svg";
 
 function AlertSheet() {
   const AlertTitle = "Initial Minor Flood Warning for the Upper Brisbane River";
@@ -50,7 +51,7 @@ function AlertSheet() {
           }}
         >
           <Typography variant="overline">Learn more</Typography>
-          <img src="/QR_Code_example.svg" alt="QR Code" width="100%" />
+          <img src={QR} alt="QR Code" width="100%" />
         </Box>
       </Stack>
     </Paper>

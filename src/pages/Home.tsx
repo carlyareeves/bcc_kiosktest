@@ -20,7 +20,7 @@ function Home() {
           Explore things to do and see around you
         </Typography>
       </Stack>
-      <Grid container spacing={2} sx={{ padding: "80px", flex: "1" }}>
+      <Grid container spacing={2} sx={{ padding: "80px" }}>
         <Grid size={4} component={RouterLink} to="/events">
           <Card variant="outlined">
             <CardContent>
@@ -41,6 +41,30 @@ function Home() {
               </Typography>
               <Typography variant="body1" align="center">
                 Public transport hubs and stops
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid size={4} component={RouterLink} to="/guides">
+          <Card variant="outlined">
+            <CardContent>
+              <Typography variant="h4" align="center">
+                Walking guides
+              </Typography>
+              <Typography variant="body1" align="center">
+                Discover hidden treasures around you
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid size={4} component={RouterLink} to="/facilities">
+          <Card variant="outlined">
+            <CardContent>
+              <Typography variant="h4" align="center">
+                Facilities
+              </Typography>
+              <Typography variant="body1" align="center">
+                Public toilet and change places
               </Typography>
             </CardContent>
           </Card>

@@ -9,10 +9,12 @@ import { ThemeProvider } from "@mui/material";
 
 import "./App.scss";
 import { wireframeTheme } from "./styles/wireframeTheme";
+import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Transport from "./pages/Transport";
-import RootLayout from "./layouts/RootLayout";
+import Facilities from "./pages/Facilities";
+import Guides from "./pages/Guides";
 
 function App() {
   const router = createBrowserRouter(
@@ -21,6 +23,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="events" element={<Events />} />
         <Route path="transport" element={<Transport />} />
+        <Route path="facilities" element={<Facilities />} />
+        <Route path="guides" element={<Guides />} />
       </Route>
     )
   );

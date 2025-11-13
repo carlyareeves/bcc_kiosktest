@@ -11,15 +11,15 @@ function ButtonHome() {
       sx={{
         position: "absolute",
         borderRadius: 999,
-        padding: "20px 40px",
+        padding: "8px 20px",
         transform: "rotate(-90deg)",
         transformOrigin: "center left",
         textTransform: "none",
-        fontSize: "48px",
+        fontSize: "32px",
         color: "white",
         backgroundColor: "black",
         boxShadow: "none",
-        "&:hover": { boxShadow: "none" },
+        "&:hover": { boxShadow: "none", color: "white" },
       }}
     >
       <Stack direction="row" sx={{ gap: 2, alignItems: "center" }}>

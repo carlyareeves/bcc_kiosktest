@@ -10,18 +10,18 @@ function ButtonNav() {
       width="100%"
       sx={{ gap: 2, alignItems: "center" }}
     >
-      <Button sx={{ width: "100%", py: 3, borderRadius: "0px" }}>
-        <Icon sx={{ fontSize: 80, color: "var(--secondary-Mist)" }}>
+      <Button sx={{ width: "100%", py: 1, borderRadius: "0px" }}>
+        <Icon sx={{ fontSize: 48, color: "var(--secondary-Mist)" }}>
           language
         </Icon>
       </Button>
-      <Button sx={{ width: "100%", py: 3 }}>
-        <Icon sx={{ fontSize: 80, color: "var(--secondary-Mist)" }}>
+      <Button sx={{ width: "100%", py: 1 }}>
+        <Icon sx={{ fontSize: 48, color: "var(--secondary-Mist)" }}>
           accessible_menu
         </Icon>
       </Button>
-      <Button sx={{ width: "100%", py: 3 }}>
-        <Icon sx={{ fontSize: 80, color: "var(--secondary-Mist)" }}>
+      <Button sx={{ width: "100%", py: 1 }}>
+        <Icon sx={{ fontSize: 48, color: "var(--secondary-Mist)" }}>
           accessible_forward
         </Icon>
       </Button>

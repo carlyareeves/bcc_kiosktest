@@ -24,7 +24,7 @@ function ButtonAlert() {
             : "var(--feedbackBg-WarningLight)",
         }}
       >
-        <Icon sx={{ fontSize: 80, color: "var(--neutral-DarkGrey)" }}>
+        <Icon sx={{ fontSize: 48, color: "var(--neutral-DarkGrey)" }}>
           flood
         </Icon>
       </Button>

@@ -9,16 +9,16 @@ export function Weather() {
   return (
     <Box sx={{ width: 100, pt: 6, pb: 4 }}>
       <Stack direction="column" sx={{ mb: 2, gap: 0.5, alignItems: "center" }}>
-        <Icon sx={{ fontSize: 60, color: "var(--secondary-Mist)" }}>
+        <Icon sx={{ fontSize: 36, color: "var(--secondary-Mist)" }}>
           clear_day
         </Icon>
-        <Box sx={{ fontSize: 40, color: "var(--secondary-Mist)" }}>
+        <Box sx={{ fontSize: 24, color: "var(--secondary-Mist)" }}>
           36.2&deg;
         </Box>
       </Stack>
-      <Stack direction="column" sx={{ mt: 2, gap: 2, alignItems: "center" }}>
-        <CircleIcon sx={{ fontSize: 16, color: "text.secondary" }} />
-        <Box sx={{ fontSize: 30, color: "var(--secondary-Mist)" }}>3.21pm</Box>
+      <Stack direction="column" sx={{ mt: 1, gap: 1, alignItems: "center" }}>
+        <CircleIcon sx={{ fontSize: 8, color: "text.secondary" }} />
+        <Box sx={{ fontSize: 18, color: "var(--secondary-Mist)" }}>3.21pm</Box>
       </Stack>
     </Box>
   );

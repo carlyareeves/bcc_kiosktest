@@ -10,7 +10,7 @@ const ButtonReload: React.FC = () => {
     <>
       <Button
         onClick={handleHardReload}
-        variant="contained"
+        variant="outlined"
         startIcon={<RestartAltIcon />}
         sx={{
           borderRadius: 999,
@@ -18,9 +18,6 @@ const ButtonReload: React.FC = () => {
           textTransform: "none",
           fontSize: "32px",
           color: "white",
-          backgroundColor: "blue",
-          boxShadow: "none",
-          "&:hover": { boxShadow: "none", color: "white" },
         }}
       >
         Reload

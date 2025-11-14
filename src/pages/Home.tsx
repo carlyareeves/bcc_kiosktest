@@ -18,19 +18,19 @@ function Home() {
       <Stack
         direction="column"
         sx={{
-          padding: "80px",
+          padding: "40px",
           backgroundColor: "var(--secondary-Rockpool)",
         }}
       >
-        <Typography variant="h2">Welcome to Redacliff Place</Typography>
-        <Typography variant="h5">
+        <Typography variant="h1">Welcome to Redacliff Place</Typography>
+        <Typography variant="h3">
           Explore things to do and see around you
         </Typography>
       </Stack>
       <Grid
         container
         spacing={2}
-        sx={{ padding: "80px", alignItems: "stretch" }}
+        sx={{ padding: "40px", alignItems: "stretch" }}
       >
         <Grid size={4} component={RouterLink} to="/events">
           <Card variant="outlined" sx={{ height: "300px" }}>
@@ -47,7 +47,7 @@ function Home() {
               </Icon>
             </CardMedia>
             <CardContent>
-              <Typography variant="h4" align="center">
+              <Typography variant="h2" align="center">
                 Events
               </Typography>
               <Typography variant="body1" align="center">
@@ -71,7 +71,7 @@ function Home() {
               </Icon>
             </CardMedia>
             <CardContent>
-              <Typography variant="h4" align="center">
+              <Typography variant="h2" align="center">
                 Transport
               </Typography>
               <Typography variant="body1" align="center">
@@ -95,7 +95,7 @@ function Home() {
               </Icon>
             </CardMedia>
             <CardContent>
-              <Typography variant="h4" align="center">
+              <Typography variant="h2" align="center">
                 Walking guides
               </Typography>
               <Typography variant="body1" align="center">
@@ -119,7 +119,7 @@ function Home() {
               </Icon>
             </CardMedia>
             <CardContent>
-              <Typography variant="h4" align="center">
+              <Typography variant="h2" align="center">
                 Facilities
               </Typography>
               <Typography variant="body1" align="center">

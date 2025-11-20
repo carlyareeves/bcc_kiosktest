@@ -22,9 +22,9 @@ function Home() {
           backgroundColor: "var(--secondary-Rockpool)",
         }}
       >
-        <Typography variant="h1">Welcome to Redacliff Place</Typography>
+        <Typography variant="h1">Good morning,</Typography>
         <Typography variant="h3">
-          Explore things to do and see around you
+          Ready to explore things to do and see around you?
         </Typography>
       </Stack>
       <Grid
@@ -96,12 +96,25 @@ function Home() {
             </CardMedia>
             <CardContent>
               <Typography variant="h2" align="center">
-                Walking guides
+                Guides
               </Typography>
               <Typography variant="body1" align="center">
                 Discover hidden treasures around you
               </Typography>
             </CardContent>
+          </Card>
+        </Grid>
+        <Grid size={4}>
+          <Card variant="outlined" sx={{ height: "300px" }}>
+            <CardMedia
+              image="/images/Parcels-Promo.webp"
+              sx={{
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            ></CardMedia>
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/facilities">

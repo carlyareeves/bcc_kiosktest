@@ -7,7 +7,7 @@ export const wireframeTheme = createTheme({
       main: "#0000FF", // Custom primary color
     },
     secondary: {
-      main: "#FF0000", // Custom secondary color
+      main: "#FFFFFF", // Custom secondary color
     },
     text: {
       primary: "#173A5E",

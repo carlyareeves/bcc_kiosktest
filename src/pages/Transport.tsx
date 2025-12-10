@@ -32,7 +32,7 @@ function Transport() {
     mapRef.current.addControl(
       new mapboxgl.NavigationControl({
         showCompass: false, // Show compass button (defaults to true)
-        showZoom: true, // Show zoom buttons (defaults to true)
+        showZoom: false, // Show zoom buttons (defaults to true)
         visualizePitch: false, // Visualize pitch on the compass (defaults to false)
       }),
       "bottom-right" // Position of the control on the map
@@ -55,7 +55,10 @@ function Transport() {
         >
           <Container>
             <Typography variant="h2">Transport</Typography>
-            <Typography variant="h3">Stops and hubs</Typography>
+            <Typography variant="h3">
+              Stops and hubs - Mapbox with walking directions generated on
+              selection of POI
+            </Typography>
           </Container>
         </Stack>
         <Container>
@@ -63,7 +66,6 @@ function Transport() {
             direction="row"
             sx={{
               padding: "20px 0",
-              backgroundColor: "var(--secondary-Mist)",
             }}
           >
             <ButtonFilter />

@@ -20,11 +20,18 @@ function ButtonAlert() {
           py: 2,
           borderRadius: "0px",
           backgroundColor: isVisible
-            ? "var(--feedbackBg-Warning)"
-            : "var(--feedbackBg-WarningLight)",
+            ? "var(--feedbackBg-Negative)"
+            : "var(--feedbackBg-NegativeLight)",
         }}
       >
-        <Icon sx={{ fontSize: 48, color: "var(--neutral-DarkGrey)" }}>
+        <Icon
+          sx={{
+            fontSize: 48,
+            color: isVisible
+              ? "var(--neutral-OffWhite)"
+              : "var(--feedbackContent-Negative)",
+          }}
+        >
           flood
         </Icon>
       </Button>

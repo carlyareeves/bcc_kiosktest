@@ -20,8 +20,8 @@ export const wireframeTheme = createTheme({
       "sans-serif", // Fallback font
     ].join(","),
     h1: { fontSize: "56px", marginBottom: "16px", fontWeight: "800" },
-    h2: { fontSize: "32px", marginBottom: "16px", fontWeight: "600" },
-    h3: { fontSize: "24px", marginBottom: "8px", fontWeight: "500" },
+    h2: { fontSize: "48px", marginBottom: "16px", fontWeight: "600" },
+    h3: { fontSize: "32px", marginBottom: "8px", fontWeight: "600" },
     h4: { fontSize: "20px", marginBottom: "8px", fontWeight: "500" },
     body1: { fontSize: "18px" },
   },

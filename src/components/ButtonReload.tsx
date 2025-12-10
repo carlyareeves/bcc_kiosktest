@@ -18,6 +18,7 @@ const ButtonReload: React.FC = () => {
           textTransform: "none",
           fontSize: "32px",
           color: "white",
+          borderColor: "white",
         }}
       >
         Reload

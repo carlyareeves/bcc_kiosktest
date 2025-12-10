@@ -56,8 +56,16 @@ const Events: React.FC = () => {
       </Stack>
       <Stack
         direction="column"
-        sx={{ justifyContent: "space-between", height: "100%" }}
+        sx={{ justifyContent: "flex-start", height: "100%" }}
       >
+        {" "}
+        <Container>
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+        </Container>
         <Container>
           <Grid
             container
@@ -86,13 +94,6 @@ const Events: React.FC = () => {
               </Grid>
             ))}
           </Grid>
-        </Container>
-        <Container>
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={handlePageChange}
-          />
         </Container>
       </Stack>
     </Stack>

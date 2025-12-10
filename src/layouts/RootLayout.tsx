@@ -1,4 +1,4 @@
-import { Box, Stack, Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import Sidebar from "./Sidebar";
 import EventPromo from "../components/EventPromo";
 import { Link as RouterLink } from "react-router-dom";

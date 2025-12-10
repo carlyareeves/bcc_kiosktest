@@ -83,7 +83,7 @@ const Events: React.FC = () => {
                       image={item["eventimage"]}
                     ></CardMedia>
                     <CardContent>
-                      <Typography variant="h3">{item["subject"]}</Typography>
+                      <Typography variant="h4">{item["subject"]}</Typography>
                       <Chip
                         label={item["primaryeventtype"]}
                         variant="outlined"

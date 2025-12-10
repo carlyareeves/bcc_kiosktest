@@ -27,16 +27,19 @@ function Transport() {
           showLandmarkIcons: false,
         },
       },
+      interactive: false,
     });
 
-    mapRef.current.addControl(
-      new mapboxgl.NavigationControl({
-        showCompass: false, // Show compass button (defaults to true)
-        showZoom: false, // Show zoom buttons (defaults to true)
-        visualizePitch: false, // Visualize pitch on the compass (defaults to false)
-      }),
-      "bottom-right" // Position of the control on the map
-    );
+    mapRef.current.touchZoomRotate.disableRotation();
+
+    // mapRef.current.addControl(
+    //   new mapboxgl.NavigationControl({
+    //     showCompass: false, // Show compass button (defaults to true)
+    //     showZoom: false, // Show zoom buttons (defaults to true)
+    //     visualizePitch: false, // Visualize pitch on the compass (defaults to false)
+    //   }),
+    //   "bottom-right" // Position of the control on the map
+    // );
 
     return () => {
       mapRef.current?.remove();

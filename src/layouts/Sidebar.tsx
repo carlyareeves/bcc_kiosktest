@@ -18,7 +18,7 @@ export function Weather() {
       </Stack>
       <Stack direction="column" sx={{ mt: 1, gap: 1, alignItems: "center" }}>
         <CircleIcon sx={{ fontSize: 8, color: "text.secondary" }} />
-        <Box sx={{ fontSize: 18, color: "var(--secondary-Mist)" }}>9.21 AM</Box>
+        <Box sx={{ fontSize: 20, color: "var(--secondary-Mist)" }}>9.21 AM</Box>
       </Stack>
     </Box>
   );

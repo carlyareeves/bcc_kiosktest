@@ -1,27 +1,27 @@
 import { Button, Icon } from "@mui/material";
 import { useState } from "react";
-import AlertSheet from "./AlertSheet";
+import LangSheet from "./LangSheet";
 import "material-symbols/outlined.css";
 
-function ButtonAlert() {
+function ButtonLanguage() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const toggleAlertVisibility = () => {
+  const toggleLangVisibility = () => {
     setIsVisible(!isVisible);
   };
 
   return (
-    <div className="weather_alert">
+    <div className="language_menu">
       <Button
-        onClick={toggleAlertVisibility}
+        onClick={toggleLangVisibility}
         sx={{
           width: "100%",
           aspectRatio: "1 / 1",
-          py: 2,
+          py: 1,
           borderRadius: "0px",
           backgroundColor: isVisible
-            ? "var(--feedbackBg-Negative)"
-            : "var(--feedbackBg-NegativeLight)",
+            ? "var(--primary-Yellow)"
+            : "var(--neutral-DarkGrey)",
         }}
       >
         <Icon
@@ -29,10 +29,10 @@ function ButtonAlert() {
             fontSize: 48,
             color: isVisible
               ? "var(--neutral-OffWhite)"
-              : "var(--feedbackContent-Negative)",
+              : "var(--secondary-Mist)",
           }}
         >
-          device_thermostat
+          language
         </Icon>
       </Button>
 
@@ -45,10 +45,10 @@ function ButtonAlert() {
           visibility: isVisible ? "visible" : "hidden",
         }}
       >
-        <AlertSheet />
+        <LangSheet />
       </div>
     </div>
   );
 }
 
-export default ButtonAlert;
+export default ButtonLanguage;

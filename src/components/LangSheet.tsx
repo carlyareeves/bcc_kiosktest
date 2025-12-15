@@ -1,10 +1,10 @@
-import { Paper, Stack } from "@mui/material";
+import { Button, Paper, Stack } from "@mui/material";
 
 function LangSheet() {
   return (
     <Paper
-      elevation={8}
-      className="alert_sheet"
+      elevation={6}
+      className="language_sheet"
       sx={{
         position: "absolute",
         left: "100%",
@@ -13,7 +13,7 @@ function LangSheet() {
         minHeight: "260px",
         padding: "64px",
         borderRadius: "0",
-        backgroundColor: "var(--neutral-BlueGrey)",
+        backgroundColor: "var(--neutral-Black)",
       }}
     >
       <Stack
@@ -21,7 +21,9 @@ function LangSheet() {
         gap="30px"
         sx={{ justifyContent: "space-between" }}
       >
-        Language buttons here
+        <Button variant="outlined" color="secondary">
+          English
+        </Button>
       </Stack>
     </Paper>
   );

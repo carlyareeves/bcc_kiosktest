@@ -20,7 +20,7 @@ function ButtonLanguage() {
           py: 1,
           borderRadius: "0px",
           backgroundColor: isVisible
-            ? "var(--primary-Yellow)"
+            ? "var(--neutral-Black)"
             : "var(--neutral-DarkGrey)",
         }}
       >
@@ -37,8 +37,9 @@ function ButtonLanguage() {
       </Button>
 
       <div
+        className="position_test"
         style={{
-          transform: isVisible ? "translateY(0px)" : "translateY(200px)",
+          transform: isVisible ? "translateY(0px)" : "translateY(100px)",
           opacity: isVisible ? 1 : 0,
           transition:
             "opacity 200ms ease-in-out, visibility 200ms ease-in-out, transform 200ms ease-in-out",

@@ -28,7 +28,7 @@ function DormantFrames() {
           <Box
             sx={{
               height: "100vh",
-              backgroundImage: "url('/images/Illustrative Map_9x16.png')",
+              backgroundImage: "url('/images/Map_Concept_V3.png')",
               backgroundSize: "cover",
               backgroundColor: "yellow",
             }}

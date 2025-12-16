@@ -24,6 +24,33 @@ function LangSheet() {
         <Button variant="outlined" color="secondary">
           English
         </Button>
+        <Button variant="outlined" color="secondary">
+          简体中文
+        </Button>
+        <Button variant="outlined" color="secondary">
+          繁體中文
+        </Button>
+        <Button variant="outlined" color="secondary">
+          日本語
+        </Button>
+        <Button variant="outlined" color="secondary">
+          한국어
+        </Button>
+        <Button variant="outlined" color="secondary">
+          العربية
+        </Button>
+        <Button variant="outlined" color="secondary">
+          Español
+        </Button>
+        <Button variant="outlined" color="secondary">
+          Français
+        </Button>
+        <Button variant="outlined" color="secondary">
+          Tiếng Việt
+        </Button>
+        <Button variant="outlined" color="secondary">
+          Filipino
+        </Button>
       </Stack>
     </Paper>
   );

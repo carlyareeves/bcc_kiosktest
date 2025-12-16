@@ -11,7 +11,6 @@ function PromoMap() {
         backgroundColor: "yellow",
       }}
     >
-      {" "}
       <Button
         component={RouterLink}
         to="/"

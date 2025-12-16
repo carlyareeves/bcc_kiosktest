@@ -19,6 +19,7 @@ import Transport from "./pages/Transport";
 import Facilities from "./pages/Facilities";
 import Guides from "./pages/Guides";
 import PromoMap from "./pages/PromoMap";
+import DormantFrames from "./pages/DormantFrames";
 
 function App() {
   const router = createBrowserRouter(
@@ -33,6 +34,7 @@ function App() {
         </Route>
         <Route element={<FullScreen />}>
           <Route path="/map" element={<PromoMap />} />
+          <Route path="/dormant" element={<DormantFrames />} />
         </Route>
       </>
     )

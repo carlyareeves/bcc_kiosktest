@@ -23,6 +23,14 @@ const RootLayout = () => {
               >
                 Map
               </Button>
+              <Button
+                component={RouterLink}
+                to="/dormant"
+                variant="contained"
+                color="secondary"
+              >
+                Dormant
+              </Button>
             </div>
           </div>
         </Box>

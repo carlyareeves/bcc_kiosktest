@@ -1,4 +1,4 @@
-import { Button, Paper, Stack, Typography, Icon } from "@mui/material";
+import { Button, Paper, Stack, Typography, Icon, Box } from "@mui/material";
 
 function LangSheet() {
   return (
@@ -9,57 +9,57 @@ function LangSheet() {
         position: "absolute",
         left: "100%",
         bottom: "0px",
-        width: "calc(100vw - 12vw)",
-        minHeight: "25vh",
-        padding: "64px",
+        padding: "32px",
         borderRadius: "0",
-        backgroundColor: "var(--neutral-Black)",
+        backgroundColor: "hsl(0 0 0 / 0.8)",
       }}
     >
-      <Button sx={{ py: 1, mb: 2 }}>
-        <Icon sx={{ fontSize: 32, color: "var(--secondary-Mist)" }}>
-          arrow_back
-        </Icon>
-      </Button>
-      <Typography variant="h3" color="white" sx={{ marginBottom: "32px" }}>
-        Select language
-      </Typography>
-      <Stack
-        direction="row"
-        gap="30px"
-        sx={{ justifyContent: "flex-start", flexWrap: "wrap" }}
+      <Box
+        sx={{
+          minWidth: "max-content",
+        }}
       >
-        <Button variant="contained" color="secondary">
-          English
+        <Button sx={{ mb: 2 }}>
+          <Icon sx={{ fontSize: 48, color: "var(--secondary-Mist)" }}>
+            arrow_back
+          </Icon>
         </Button>
-        <Button variant="outlined" color="secondary">
-          简体中文
-        </Button>
-        <Button variant="outlined" color="secondary">
-          繁體中文
-        </Button>
-        <Button variant="outlined" color="secondary">
-          日本語
-        </Button>
-        <Button variant="outlined" color="secondary">
-          한국어
-        </Button>
-        <Button variant="outlined" color="secondary">
-          العربية
-        </Button>
-        <Button variant="outlined" color="secondary">
-          Español
-        </Button>
-        <Button variant="outlined" color="secondary">
-          Français
-        </Button>
-        <Button variant="outlined" color="secondary">
-          Tiếng Việt
-        </Button>
-        <Button variant="outlined" color="secondary">
-          Filipino
-        </Button>
-      </Stack>
+        <Typography variant="h3" color="white" sx={{ marginBottom: "48px" }}>
+          Select language
+        </Typography>
+        <Stack direction="column" gap="8px" sx={{ alignItems: "flex-start" }}>
+          <Button variant="contained" color="secondary">
+            English
+          </Button>
+          <Button variant="outlined" color="secondary">
+            简体中文
+          </Button>
+          <Button variant="outlined" color="secondary">
+            繁體中文
+          </Button>
+          <Button variant="outlined" color="secondary">
+            日本語
+          </Button>
+          <Button variant="outlined" color="secondary">
+            한국어
+          </Button>
+          <Button variant="outlined" color="secondary">
+            العربية
+          </Button>
+          <Button variant="outlined" color="secondary">
+            Español
+          </Button>
+          <Button variant="outlined" color="secondary">
+            Français
+          </Button>
+          <Button variant="outlined" color="secondary">
+            Tiếng Việt
+          </Button>
+          <Button variant="outlined" color="secondary">
+            Filipino
+          </Button>
+        </Stack>
+      </Box>
     </Paper>
   );
 }

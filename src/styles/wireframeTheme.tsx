@@ -16,14 +16,15 @@ export const wireframeTheme = createTheme({
   },
   typography: {
     fontFamily: [
-      "Brisbane", // Primary font
+      "TT Norm", // Primary font
       "sans-serif", // Fallback font
     ].join(","),
-    h1: { fontSize: "56px", marginBottom: "16px", fontWeight: "800" },
-    h2: { fontSize: "48px", marginBottom: "16px", fontWeight: "600" },
-    h3: { fontSize: "32px", marginBottom: "8px", fontWeight: "600" },
-    h4: { fontSize: "24px", marginBottom: "8px", fontWeight: "500" },
-    body1: { fontSize: "18px" },
+    h1: { fontSize: "56px", marginBottom: "24px", fontWeight: "800" },
+    h2: { fontSize: "48px", marginBottom: "16px", fontWeight: "700" },
+    h3: { fontSize: "32px", marginBottom: "16px" },
+    h4: { fontSize: "24px", marginBottom: "8px" },
+    body1: { fontSize: "1rem", fontWeight: "500", lineHeight: "1.3" },
+    body2: { fontSize: "16px", fontWeight: "500" },
   },
   components: {
     MuiIcon: {
@@ -31,8 +32,29 @@ export const wireframeTheme = createTheme({
         baseClassName: "material-symbols-outlined",
       },
     },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "initial",
+          fontSize: "1.3rem",
+          fontWeight: "600",
+        },
+        startIcon: {
+          marginRight: "16px",
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          padding: "0 4px",
+        },
+        label: { fontWeight: "500" },
+      },
+    },
     MuiTypography: {
       defaultProps: {
+        letterSpacing: "-0.5px",
         variantMapping: {
           h1: "div",
           h2: "div",

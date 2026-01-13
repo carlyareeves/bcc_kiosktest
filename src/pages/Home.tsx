@@ -13,17 +13,20 @@ function Home() {
   return (
     <Stack
       direction="column"
-      sx={{ backgroundColor: "var(--neutral-OffWhite)", height: "100%" }}
+      sx={{
+        height: "100%",
+        background:
+          "linear-gradient(154deg, var(--solids-white, rgba(255, 255, 255, 0.20)) 6.6%, rgba(0, 46, 83, 0.20) 80.53%), radial-gradient(42% 70.39% at 74% 28.65%, var(--brandSecondary-deepOcean, rgba(0, 46, 83, 0.20)) 0%, var(--brandSecondary-rockPool, rgba(236, 245, 251, 0.20)) 100%), radial-gradient(30.95% 68.47% at 28.68% 82.78%, var(--brandSecondary-sky, #D4E7F4) 0%, var(--brandSecondary-mist, #F8FCFF) 100%);",
+      }}
     >
       <Stack
         direction="column"
         sx={{
           padding: "40px",
-          backgroundColor: "var(--secondary-Rockpool)",
         }}
       >
         <Typography variant="h1">Good morning,</Typography>
-        <Typography variant="h3">
+        <Typography sx={{ fontSize: "28px" }}>
           Ready to explore things to do and see around you?
         </Typography>
       </Stack>
@@ -33,16 +36,24 @@ function Home() {
         sx={{ padding: "40px", alignItems: "stretch" }}
       >
         <Grid size={4} component={RouterLink} to="/events">
-          <Card variant="outlined" sx={{ height: "300px" }}>
+          <Card
+            variant="outlined"
+            sx={{
+              height: "300px",
+              borderWidth: "8px",
+              borderRadius: "16px",
+              borderColor: "var(--secondary-Rockpool)",
+            }}
+          >
             <CardMedia
               sx={{
-                height: 140,
+                height: 120,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",
               }}
             >
-              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
                 stadium
               </Icon>
             </CardMedia>
@@ -51,7 +62,7 @@ function Home() {
                 Events
               </Typography>
               <Typography variant="body1" align="center">
-                Local art, culture, and music events
+                Local arts, culture, and music events
               </Typography>
             </CardContent>
           </Card>
@@ -60,13 +71,13 @@ function Home() {
           <Card variant="outlined" sx={{ height: "300px" }}>
             <CardMedia
               sx={{
-                height: 140,
+                height: 120,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",
               }}
             >
-              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+              <Icon sx={{ fontSize: 80, color: "var(--secondary-DeepOcean)" }}>
                 boat_bus
               </Icon>
             </CardMedia>
@@ -84,13 +95,13 @@ function Home() {
           <Card variant="outlined" sx={{ height: "300px" }}>
             <CardMedia
               sx={{
-                height: 140,
+                height: 120,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",
               }}
             >
-              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+              <Icon sx={{ fontSize: 80, color: "var(--secondary-DeepOcean)" }}>
                 directions_walk
               </Icon>
             </CardMedia>

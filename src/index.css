@@ -1,21 +1,17 @@
 @font-face {
-  font-family: 'TT Norm';
-  src: url('./assets/fonts/TT_Norms_Pro_VF_Trial.woff2') format('woff2'),
-       url('./assets/fonts/TT_Norms_Pro_VF_Trial.woff') format('woff');
+  font-family: "TT Norm";
+  src: url("./assets/fonts/TT_Norms_Pro_VF_Trial.woff2") format("woff2"), url("./assets/fonts/TT_Norms_Pro_VF_Trial.woff") format("woff");
   font-weight: 400 500 600 800;
 }
-
 :root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   font-size: 18px;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   --neutral-OffWhite: rgb(248 248 248 / 1);
   --neutral-BlueGrey: rgb(238 242 245 / 1);
   --neutral-DarkGrey: rgb(51 51 51 / 1);
@@ -47,7 +43,9 @@ body {
   min-height: 100vh;
 }
 
-a{text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -60,4 +58,4 @@ a{text-decoration: none;}
   button {
     background-color: #f9f9f9;
   }
-}
+}/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,4 @@
-import { Button, Icon } from "@mui/material";
+import { Icon, Button } from "@mui/material";
 import { useState } from "react";
 import AlertSheet from "./AlertSheet";
 import "material-symbols/outlined.css";
@@ -16,12 +16,14 @@ function ButtonAlert() {
         onClick={toggleAlertVisibility}
         sx={{
           width: "100%",
+          // display: "flex",
+          // flexDirection: "column",
           aspectRatio: "1 / 1",
           py: 2,
           borderRadius: "0px",
           backgroundColor: isVisible
-            ? "var(--feedbackBg-Negative)"
-            : "var(--feedbackBg-NegativeLight)",
+            ? "var(--feedbackBg-MidWarning)"
+            : "var(--feedbackBg-MidWarningLight)",
         }}
       >
         <Icon
@@ -29,11 +31,12 @@ function ButtonAlert() {
             fontSize: 48,
             color: isVisible
               ? "var(--neutral-OffWhite)"
-              : "var(--feedbackContent-Negative)",
+              : "var(--feedbackContent-MidWarning)",
           }}
         >
-          device_thermostat
+          emergency_heat_2
         </Icon>
+        {/* <Typography variant="caption">Heat Warning</Typography> */}
       </Button>
 
       <div

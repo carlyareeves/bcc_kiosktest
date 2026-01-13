@@ -1,22 +1,22 @@
 import { Button, Icon } from "@mui/material";
 import { useState } from "react";
-import LangSheet from "./LangSheet";
+import MenuSheet from "./MenuSheet";
 import "material-symbols/outlined.css";
 
-function ButtonLanguage() {
+function ButtonInclusion() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const toggleLangVisibility = () => {
+  const toggleAccessVisibility = () => {
     setIsVisible(!isVisible);
   };
 
   return (
     <div className="language_menu">
       <Button
-        onClick={toggleLangVisibility}
+        onClick={toggleAccessVisibility}
         sx={{
           width: "100%",
-          // aspectRatio: "1 / 1",
+          //   aspectRatio: "1 / 1",
           height: "100px",
           py: 1,
           borderRadius: "0px",
@@ -33,7 +33,7 @@ function ButtonLanguage() {
               : "var(--secondary-Mist)",
           }}
         >
-          g_translate
+          accessible_menu
         </Icon>
       </Button>
 
@@ -47,10 +47,10 @@ function ButtonLanguage() {
           visibility: isVisible ? "visible" : "hidden",
         }}
       >
-        <LangSheet />
+        <MenuSheet />
       </div>
     </div>
   );
 }
 
-export default ButtonLanguage;
+export default ButtonInclusion;

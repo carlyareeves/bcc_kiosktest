@@ -11,6 +11,7 @@ function ButtonHome() {
       sx={{
         position: "absolute",
         borderRadius: 999,
+        overflow: "clip",
         padding: "8px 20px",
         transform: "rotate(-90deg)",
         transformOrigin: "center left",

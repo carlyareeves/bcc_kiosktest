@@ -1,5 +1,6 @@
 import { Paper, Stack, Chip, Box, Typography } from "@mui/material";
 import QRimg from "/src/assets/QR_Code_Example.svg";
+import { SvgIconAWSHeatWA } from "./IconAWSHeatWA";
 
 function AlertSheet() {
   const AlertTitle = "Severe heatwave warning for: Gulf Country";
@@ -18,7 +19,7 @@ function AlertSheet() {
         minHeight: "260px",
         padding: "64px",
         borderRadius: "0",
-        backgroundColor: "var(--feedbackBg-NegativeLight)",
+        backgroundColor: "var(--feedbackBg-MidWarningLight)",
       }}
     >
       <Stack
@@ -35,22 +36,27 @@ function AlertSheet() {
             alignItems: "flex-start",
           }}
         >
+          <Stack direction="row" gap="24px">
+            <SvgIconAWSHeatWA />
+            <Typography
+              variant="h3"
+              sx={{
+                fontWeight: "700",
+                marginBottom: "24px",
+                color: "var(--secondary-DeepOcean)",
+              }}
+            >
+              {AlertTitle}
+            </Typography>
+          </Stack>
           <Chip
             sx={{
-              fontSize: "18px",
-              color: "white",
-              backgroundColor: "var(--secondary-DeepOcean)",
-              marginBottom: "16px",
+              fontSize: "1rem",
+              marginBottom: "24px",
+              backgroundColor: "rgb(255 255 255 / 0.5)",
             }}
             label={AlertTime}
           />
-
-          <Typography
-            variant="h3"
-            sx={{ marginBottom: "24px", color: "var(--secondary-DeepOcean)" }}
-          >
-            {AlertTitle}
-          </Typography>
           <Typography variant="body1">{AlertSummary}</Typography>
         </Box>
         <Box
@@ -63,8 +69,14 @@ function AlertSheet() {
             minWidth: "180px",
           }}
         >
-          <Typography variant="overline">Safety Advice</Typography>
-          <img src={QRimg} alt="QR Code" width="100%" />
+          <Typography variant="body2" marginBottom="16px">
+            Read safety advice on the Brisbane City Council Emergency Dashboard:
+          </Typography>
+          <Box
+            sx={{ display: "flex", backgroundColor: "white", padding: "8px" }}
+          >
+            <img src={QRimg} alt="QR Code" width="100%" />
+          </Box>
         </Box>
       </Stack>
     </Paper>

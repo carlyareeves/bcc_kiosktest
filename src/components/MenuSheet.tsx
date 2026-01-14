@@ -6,7 +6,6 @@ import { SvgIconScreenHeight } from "./IconScreenHeight";
 function MenuSheet() {
   return (
     <Paper
-      elevation={6}
       className="menu_sheet"
       sx={{
         position: "absolute",

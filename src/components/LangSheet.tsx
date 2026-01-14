@@ -1,9 +1,9 @@
 import { Button, Paper, Stack, Typography, Icon, Box } from "@mui/material";
+import IconCheck from "@mui/icons-material/Check";
 
 function LangSheet() {
   return (
     <Paper
-      elevation={6}
       className="language_sheet"
       sx={{
         position: "absolute",
@@ -28,34 +28,34 @@ function LangSheet() {
           Select language
         </Typography>
         <Stack direction="column" gap="8px" sx={{ alignItems: "flex-start" }}>
-          <Button variant="contained" color="secondary">
+          <Button variant="text" color="secondary" startIcon={<IconCheck />}>
             English
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             简体中文
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             繁體中文
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             日本語
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             한국어
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             العربية
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             Español
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             Français
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             Tiếng Việt
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="text" color="secondary">
             Filipino
           </Button>
         </Stack>

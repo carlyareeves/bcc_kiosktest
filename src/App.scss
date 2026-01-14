@@ -57,7 +57,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  background-image: radial-gradient(rgb(#000,50%), rgb(#000,10%));
+  background-image: url(/images/basementjaxxbne.jpg);
+  background-size: cover;
   color: white;
   position: absolute;
   // inset: 0%;
@@ -70,7 +71,6 @@ body {
   display: flex;
   background-color: var(--neutral-DarkGrey);
   min-width: 12vw;
-  z-index: 10;
 }
 .sidebar_wrapper {
   width: 100%;
@@ -78,6 +78,8 @@ body {
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 .content {
   width: 100%;
@@ -97,7 +99,6 @@ body {
 }
 
 /* Sidebar */
-
 .sidebar_stat {
   position: relative;
   display: flex;
@@ -119,11 +120,11 @@ body {
   width: 100%;
   overflow: visible;
 }
-.position_test {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+// .position_test {
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+// }
 
 /* Transport */
 .map_wrapper {
@@ -135,8 +136,8 @@ body {
   height: 64px!important;
 }
 
-/* Dormant */
-#frames {
+/* Dormant Promos */
+#dormant_frames {
   text-align: center;
   overflow: hidden;
   height: 100vh;
@@ -146,15 +147,42 @@ body {
 
 .dormant_wrapper {
   width: 200vw;
-  -webkit-animation: frame 12s ease 2s infinite;
-  animation: frame 12s ease 2s infinite;
+  -webkit-animation: dormant_frame 12s ease 2s infinite;
+  animation: dormant_frame 12s ease 2s infinite;
 }
-.frame {
+.dormant_frame {
   float: left;
   height: 100vh;
   width: 100vw;
 }
-@keyframes frame {
+@keyframes dormant_frame {
+  0% {margin-left: 0px;}
+  10% {margin-left: -100vw;}
+  40% {margin-left: -100vw;}
+  50% {margin-left: 0px;}
+  100% {margin-left: 0px;}
+}
+
+/* Top Third Promos */
+#promo_frames {
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.promos_wrapper {
+  width: 200vw;
+  -webkit-animation: promo_frame 12s ease 2s infinite;
+  animation: promo_frame 12s ease 2s infinite;
+}
+.promo_frame {
+  float: left;
+  height: 100vh;
+  width: 100vw;
+}
+@keyframes promo_frame {
   0% {margin-left: 0px;}
   10% {margin-left: -100vw;}
   40% {margin-left: -100vw;}

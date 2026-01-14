@@ -1,9 +1,9 @@
 import { Box, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
-function DormantFrames() {
+function PromoFrames() {
   return (
-    <div id="dormant_frames">
+    <div id="promo_frames">
       <Button
         component={RouterLink}
         to="/"
@@ -13,8 +13,8 @@ function DormantFrames() {
       >
         Back to Home
       </Button>
-      <div className="dormant_wrapper">
-        <div className="dormant_frame">
+      <div className="promos_wrapper">
+        <div className="promo_frame">
           <Box
             sx={{
               height: "100vh",
@@ -24,7 +24,7 @@ function DormantFrames() {
             }}
           ></Box>
         </div>
-        <div className="dormant_frame">
+        <div className="promo_frame">
           <Box
             sx={{
               height: "100vh",
@@ -39,4 +39,4 @@ function DormantFrames() {
   );
 }
 
-export default DormantFrames;
+export default PromoFrames;

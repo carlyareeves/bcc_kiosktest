@@ -38,9 +38,9 @@ function ButtonLanguage() {
       </Button>
 
       <div
-        className="position_test"
+        // className="position_test"
         style={{
-          transform: isVisible ? "translateY(0px)" : "translateY(100px)",
+          transform: isVisible ? "translateX(0px)" : "translateX(-100px)",
           opacity: isVisible ? 1 : 0,
           transition:
             "opacity 200ms ease-in-out, visibility 200ms ease-in-out, transform 200ms ease-in-out",

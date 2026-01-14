@@ -3,7 +3,7 @@ import Stack from "@mui/material/Stack";
 import ButtonHome from "../components/ButtonHome";
 import ButtonNav from "../components/ButtonNav";
 import CircleIcon from "@mui/icons-material/Circle";
-import IconSunny from "/public/images/BOM-sunny.svg";
+import IconSunny from "/src/assets/BOM-sunny.svg";
 
 export function Weather() {
   return (

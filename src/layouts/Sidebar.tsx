@@ -2,16 +2,14 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import ButtonHome from "../components/ButtonHome";
 import ButtonNav from "../components/ButtonNav";
-import Icon from "@mui/material/Icon";
 import CircleIcon from "@mui/icons-material/Circle";
+import IconSunny from "/public/images/BOM-sunny.svg";
 
 export function Weather() {
   return (
     <Box sx={{ width: 100, pt: 6, pb: 4 }}>
       <Stack direction="column" sx={{ mb: 2, gap: 0.5, alignItems: "center" }}>
-        <Icon sx={{ fontSize: 40, color: "var(--secondary-Mist)" }}>
-          clear_day
-        </Icon>
+        <img width="56px" height="auto" src={IconSunny} />
         <Box sx={{ fontSize: 28, color: "var(--secondary-Mist)" }}>
           36.2&deg;
         </Box>

@@ -19,6 +19,7 @@ import Transport from "./pages/Transport";
 import Facilities from "./pages/Facilities";
 import Guides from "./pages/Guides";
 import PromoMap from "./pages/PromoMap";
+import PromoBapp from "./pages/PromoBapp";
 import DormantFrames from "./pages/DormantFrames";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="transport" element={<Transport />} />
           <Route path="facilities" element={<Facilities />} />
           <Route path="guides" element={<Guides />} />
+          <Route path="bapp" element={<PromoBapp />} />
         </Route>
         <Route element={<FullScreen />}>
           <Route path="/map" element={<PromoMap />} />

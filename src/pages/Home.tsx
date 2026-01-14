@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import {
@@ -5,11 +6,17 @@ import {
   CardContent,
   CardMedia,
   Icon,
+  Modal,
   Stack,
   Typography,
 } from "@mui/material";
+import PromoBapp from "./PromoBapp";
 
 function Home() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <Stack
       direction="column"
@@ -30,6 +37,14 @@ function Home() {
           Ready to explore things to do and see around you?
         </Typography>
       </Stack>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="parent-modal-title"
+        aria-describedby="parent-modal-description"
+      >
+        <PromoBapp />
+      </Modal>
       <Grid
         container
         spacing={2}
@@ -68,7 +83,15 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/transport">
-          <Card variant="outlined" sx={{ height: "300px" }}>
+          <Card
+            variant="outlined"
+            sx={{
+              height: "300px",
+              borderWidth: "8px",
+              borderRadius: "16px",
+              borderColor: "var(--secondary-Rockpool)",
+            }}
+          >
             <CardMedia
               sx={{
                 height: 120,
@@ -77,7 +100,7 @@ function Home() {
                 alignItems: "flex-end",
               }}
             >
-              <Icon sx={{ fontSize: 80, color: "var(--secondary-DeepOcean)" }}>
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
                 boat_bus
               </Icon>
             </CardMedia>
@@ -92,7 +115,15 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/guides">
-          <Card variant="outlined" sx={{ height: "300px" }}>
+          <Card
+            variant="outlined"
+            sx={{
+              height: "300px",
+              borderWidth: "8px",
+              borderRadius: "16px",
+              borderColor: "var(--secondary-Rockpool)",
+            }}
+          >
             <CardMedia
               sx={{
                 height: 120,
@@ -101,8 +132,8 @@ function Home() {
                 alignItems: "flex-end",
               }}
             >
-              <Icon sx={{ fontSize: 80, color: "var(--secondary-DeepOcean)" }}>
-                directions_walk
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
+                follow_the_signs
               </Icon>
             </CardMedia>
             <CardContent>
@@ -116,9 +147,13 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4}>
-          <Card variant="outlined" sx={{ height: "300px" }}>
+          <Card
+            onClick={handleOpen}
+            variant="outlined"
+            sx={{ height: "300px", borderRadius: "8px" }}
+          >
             <CardMedia
-              image="/images/Parcels-Promo.webp"
+              image="/images/Bapp_tile-promo.png"
               sx={{
                 height: "100%",
                 display: "flex",
@@ -129,16 +164,24 @@ function Home() {
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/facilities">
-          <Card variant="outlined" sx={{ height: "300px" }}>
+          <Card
+            variant="outlined"
+            sx={{
+              height: "300px",
+              borderWidth: "8px",
+              borderRadius: "16px",
+              borderColor: "var(--secondary-Rockpool)",
+            }}
+          >
             <CardMedia
               sx={{
-                height: 140,
+                height: 120,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",
               }}
             >
-              <Icon sx={{ fontSize: 100, color: "var(--secondary-DeepOcean)" }}>
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
                 family_restroom
               </Icon>
             </CardMedia>

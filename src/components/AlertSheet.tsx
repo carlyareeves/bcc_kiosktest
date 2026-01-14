@@ -57,7 +57,14 @@ function AlertSheet() {
             }}
             label={AlertTime}
           />
-          <Typography variant="body1">{AlertSummary}</Typography>
+          <Typography variant="body1" marginBottom="16px">
+            {AlertSummary}
+          </Typography>
+          <Typography
+            sx={{ color: "var(--feedbackContent-Negative)", fontWeight: "700" }}
+          >
+            If you are in immediate danger, call 000
+          </Typography>
         </Box>
         <Box
           sx={{

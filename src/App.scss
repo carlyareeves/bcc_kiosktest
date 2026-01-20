@@ -15,11 +15,11 @@ body {
 
 .grid_wrapper {
   display: grid;
-  grid-template-rows: [promo] 25% [content] 75%;
+  grid-template-rows: [content] 75% [promo] 25%;
   grid-template-columns: auto;
   grid-template-areas:
-    "promo"
-    "content";
+    "content"
+    "promo";
   height: 100vh;
 }
 .promo_wrapper {
@@ -70,7 +70,7 @@ body {
 .sidebar {
   display: flex;
   background-color: var(--neutral-DarkGrey);
-  min-width: 12vw;
+  min-width: 120px;
 }
 .sidebar_wrapper {
   width: 100%;

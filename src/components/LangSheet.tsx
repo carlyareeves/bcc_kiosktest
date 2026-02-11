@@ -11,7 +11,7 @@ function LangSheet() {
         bottom: "0px",
         padding: "32px",
         borderRadius: "0",
-        backgroundColor: "hsl(0 0 0 / 0.8)",
+        backgroundColor: "rgb(0 0 0 / 0.8)",
       }}
     >
       <Box

@@ -29,7 +29,7 @@ function Home() {
       <Stack
         direction="column"
         sx={{
-          padding: "40px",
+          padding: "80px 40px 40px",
         }}
       >
         <Typography variant="h1">Good morning,</Typography>
@@ -191,6 +191,38 @@ function Home() {
               </Typography>
               <Typography variant="body1" align="center">
                 Public toilet and change places
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid size={4} component={RouterLink} to="/facilities">
+          <Card
+            variant="outlined"
+            sx={{
+              height: "300px",
+              borderWidth: "8px",
+              borderRadius: "16px",
+              borderColor: "var(--secondary-Rockpool)",
+            }}
+          >
+            <CardMedia
+              sx={{
+                height: 120,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
+                nature
+              </Icon>
+            </CardMedia>
+            <CardContent>
+              <Typography variant="h2" align="center">
+                Parks
+              </Typography>
+              <Typography variant="body1" align="center">
+                Public parks, gardens, and greenspaces
               </Typography>
             </CardContent>
           </Card>

@@ -1,4 +1,4 @@
-import { Icon, Button } from "@mui/material";
+import { Icon, ButtonBase } from "@mui/material";
 import { useState } from "react";
 import AlertSheet from "./AlertSheet";
 import "material-symbols/outlined.css";
@@ -12,7 +12,7 @@ function ButtonAlert() {
 
   return (
     <div className="weather_alert">
-      <Button
+      <ButtonBase
         onClick={toggleAlertVisibility}
         sx={{
           width: "100%",
@@ -37,7 +37,7 @@ function ButtonAlert() {
           emergency_heat_2
         </Icon>
         {/* <Typography variant="caption">Heat Warning</Typography> */}
-      </Button>
+      </ButtonBase>
 
       <div
         style={{

@@ -32,7 +32,7 @@ const PublicArt: React.FC = () => {
     indexOfFirstItem,
     indexOfLastItem,
   );
-  // Calculate total pages
+  // Calculate total items
   const totalItems = Math.ceil((data as ArtFeature[]).length);
 
   // Calculate total pages

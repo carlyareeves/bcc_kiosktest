@@ -23,17 +23,22 @@ const Facilities: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
+  const itemsPlural = "amenities";
+
   // Calculate indices and current items
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = (data as FacilitiesFeature[]).slice(
     indexOfFirstItem,
-    indexOfLastItem
+    indexOfLastItem,
   );
+
+  // Calculate total items
+  const totalItems = Math.ceil((data as FacilitiesFeature[]).length);
 
   // Calculate total pages
   const totalPages = Math.ceil(
-    (data as FacilitiesFeature[]).length / itemsPerPage
+    (data as FacilitiesFeature[]).length / itemsPerPage,
   );
 
   const handlePageChange = (pageNumber: number) => {
@@ -85,6 +90,8 @@ const Facilities: React.FC = () => {
           <Pagination
             currentPage={currentPage}
             totalPages={totalPages}
+            totalItems={totalItems}
+            itemsPlural={itemsPlural}
             onPageChange={handlePageChange}
           />
         </Container>

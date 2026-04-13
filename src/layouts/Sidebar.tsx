@@ -3,15 +3,15 @@ import Stack from "@mui/material/Stack";
 import ButtonHome from "../components/ButtonHome";
 import ButtonNav from "../components/ButtonNav";
 import CircleIcon from "@mui/icons-material/Circle";
-import IconSunny from "/src/assets/BOM-sunny.svg";
+import IconShowers from "/src/assets/forecastShowers.svg";
 
 export function Weather() {
   return (
     <Box sx={{ width: 100, pt: 6, pb: 4 }}>
       <Stack direction="column" sx={{ mb: 2, gap: 0.5, alignItems: "center" }}>
-        <img width="56px" height="auto" src={IconSunny} />
+        <img width="56px" height="auto" src={IconShowers} />
         <Box sx={{ fontSize: 28, color: "var(--secondary-Mist)" }}>
-          36.2&deg;
+          26.2&deg;
         </Box>
       </Stack>
       <Stack direction="column" sx={{ mt: 1, gap: 1, alignItems: "center" }}>

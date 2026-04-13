@@ -1,0 +1,344 @@
+[
+    {
+        "index": 5,
+        "item_title": "Progress of Civilization",
+        "item_title_list": "P, Progress of Civilization",
+        "artist": "Daphne Mayo",
+        "artist_list": "D, Daphne Mayo",
+        "location": "King George Square, Brisbane CBD",
+        "material": "sandstone",
+        "description": "A carved sandstone tympanum in the pediment above the main entrance of City Hall. Completed after the opening of the building in 1930.",
+        "installed": "1930",
+        "latitude": -27.468692,
+        "longitude": 153.023846,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023846,
+            "lat": -27.468692
+        }
+    },
+    {
+        "index": 6,
+        "item_title": "King George V Memorial - Lions",
+        "item_title_list": "K, King George V Memorial - Lions",
+        "artist": "E.F. Kohler, R. Summerhayes, E.S. Taylor",
+        "artist_list": "E, E.F. Kohler, R. Summerhayes, E.S. Taylor",
+        "location": "King George Square, Brisbane CBD",
+        "material": "bronze",
+        "description": "The bronze Lions were commissioned as part of the King George V memorial, which traditionally symbolise the British Empire.",
+        "installed": "1938",
+        "latitude": -27.468694,
+        "longitude": 153.023972,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023972,
+            "lat": -27.468694
+        }
+    },
+    {
+        "index": 7,
+        "item_title": "King George V Memorial",
+        "item_title_list": "K, King George V Memorial",
+        "artist": "E.F. Kohler, R. Summerhayes, E.S. Taylor",
+        "artist_list": "E, E.F. Kohler, R. Summerhayes, E.S. Taylor",
+        "location": "King George Square, Brisbane CBD",
+        "material": "bronze",
+        "description": "The King George V memorial statue was unveiled in Albert Square on 24 May 1938 following the King's death in 1936.",
+        "installed": "1938",
+        "latitude": -27.468417,
+        "longitude": 153.023694,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023694,
+            "lat": -27.468417
+        }
+    },
+    {
+        "index": 13,
+        "item_title": "Gestation",
+        "item_title_list": "G, Gestation",
+        "artist": "Baile Oakes",
+        "artist_list": "B, Baile Oakes",
+        "location": "Queen Street Mall, Brisbane CBD",
+        "material": "bronze",
+        "description": "Gestation is the first work in a series of monumental sculptures created by American artist Baile Oakes. Commissioned for World Expo 88.",
+        "installed": "1988",
+        "latitude": -27.470921,
+        "longitude": 153.023705,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023705,
+            "lat": -27.470921
+        }
+    },
+    {
+        "index": 21,
+        "item_title": "Petrie Tableau",
+        "item_title_list": "P, Petrie Tableau",
+        "artist": "Stephen Walker",
+        "artist_list": "S, Stephen Walker",
+        "location": "King George Square, Brisbane CBD",
+        "material": "bronze",
+        "description": "This work was commissioned during the bicentennial year to honour early Brisbane settlers.  It specifically depicts the Petrie family and their neighbours in 1842.",
+        "installed": "1990",
+        "latitude": -27.468306,
+        "longitude": 153.023806,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023806,
+            "lat": -27.468306
+        }
+    },
+    {
+        "index": 26,
+        "item_title": "Speakers Corner",
+        "item_title_list": "S, Speakers Corner",
+        "artist": "Artbusters",
+        "artist_list": "A, Artbusters",
+        "location": "King George Square, Brisbane CBD",
+        "material": "bronze",
+        "description": "This work depicts three important figures in Queensland's history; Emma Miller, Sir Charles Lilley and Steele Rudd.",
+        "installed": "1993",
+        "latitude": -27.468528,
+        "longitude": 153.024639,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.024639,
+            "lat": -27.468528
+        }
+    },
+    {
+        "index": 29,
+        "item_title": "Images of Brisbane",
+        "item_title_list": "I, Images of Brisbane",
+        "artist": "Michael Bulloch",
+        "artist_list": "M, Michael Bulloch",
+        "location": "Edward Street, Brisbane CBD",
+        "material": "sandstone",
+        "description": "Carved in Queen Street Mall during Art & Fashion week, 1995. A montage of Images that typify Brisbane.",
+        "installed": "1995",
+        "latitude": -27.467917,
+        "longitude": 153.026417,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.026417,
+            "lat": -27.467917
+        }
+    },
+    {
+        "index": 35,
+        "item_title": "The Elements",
+        "item_title_list": "T, The Elements",
+        "artist": "Craig Medson",
+        "artist_list": "C, Craig Medson",
+        "location": "Edward Street, Brisbane CBD",
+        "material": "sandstone",
+        "description": "Representing the natural elements of Earth, Fire & Wind this sculpture was carved in the Queen Street Mall during Art & Fashion Week.",
+        "installed": "1995",
+        "latitude": -27.467972,
+        "longitude": 153.0265,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.0265,
+            "lat": -27.467972
+        }
+    },
+    {
+        "index": 53,
+        "item_title": "Moreton Courier",
+        "item_title_list": "M, Moreton Courier",
+        "artist": "John Coleman",
+        "artist_list": "J, John Coleman",
+        "location": "Charlotte and George Streets, Brisbane CBD",
+        "material": "stainless steel",
+        "description": "References Brisbane history and replicates the front page of the original Moreton Bay Courier newspaper. Sited next to the original location of the newspaper building.",
+        "installed": "1998",
+        "latitude": -27.472361,
+        "longitude": 153.025111,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.025111,
+            "lat": -27.472361
+        }
+    },
+    {
+        "index": 54,
+        "item_title": "City Roos",
+        "item_title_list": "C, City Roos",
+        "artist": "Christopher Trotter",
+        "artist_list": "C, Christopher Trotter",
+        "location": "George Street, Brisbane CBD",
+        "material": "found metals",
+        "description": "The kangaroo sculptures have been deliberately placed in a highly used pedestrian area, to demonstrate how humans need to share outdoor spaces with native animals.",
+        "installed": "1999",
+        "latitude": -27.470694,
+        "longitude": 153.023278,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023278,
+            "lat": -27.470694
+        }
+    },
+    {
+        "index": 55,
+        "item_title": "Pride",
+        "item_title_list": "P, Pride",
+        "artist": "Grant Lehmann",
+        "artist_list": "G, Grant Lehmann",
+        "location": "Charlotte and Albert Street, Brisbane CBD",
+        "material": "stainless steel",
+        "description": "An abstracted human form, constructed of 598 panels and standing 3.4m tall.",
+        "installed": "1999",
+        "latitude": -27.471194,
+        "longitude": 153.026861,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.026861,
+            "lat": -27.471194
+        }
+    },
+    {
+        "index": 84,
+        "item_title": "Echoes from the North",
+        "item_title_list": "E, Echoes from the North",
+        "artist": "Augustine Dall' Ava",
+        "artist_list": "A, Augustine Dall' Ava",
+        "location": "Queen Street, Brisbane CBD",
+        "material": "stainless steel",
+        "description": "Echoes from the North was installed in 2005 and is a connector between Brisbane City and Northern Queensland. The lush green and iridescent white of the central form are reminders of the rainforest and tropical plant life. The metallic reds, blues and yellows are a reflection of the iridescent tropical hues of the fish found on the Great Barrier Reef with the blue of the sea and the golden yellow to the sun a reminder of the beach and maritime activities.",
+        "installed": "2005",
+        "latitude": -27.468222,
+        "longitude": 153.02675,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.02675,
+            "lat": -27.468222
+        }
+    },
+    {
+        "index": 94,
+        "item_title": "Stolen Generation Memorial Plaque",
+        "item_title_list": "S, Stolen Generation Memorial Plaque",
+        "artist": "Lorrette Burgess, Delores McDonald",
+        "artist_list": "L, Lorrette Burgess, Delores McDonald",
+        "location": "King George Square, Brisbane CBD",
+        "material": "aluminium",
+        "description": "In 1998, 5 ceremonial plaques were placed around significant sites in Brisbane near institutions that housed victims of the stolen generation. In the years 1900-1971, as a matter of government policy Aboriginal and Torres Strait Islander children were forcibly removed from their families and culture by representatives of the State with the support of the wider community including Christian churches.",
+        "installed": "2007",
+        "latitude": -27.468178,
+        "longitude": 153.023979,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023979,
+            "lat": -27.468178
+        }
+    },
+    {
+        "index": 98,
+        "item_title": "Zoom! Zap! and Blat!",
+        "item_title_list": "Z, Zoom! Zap! and Blat!",
+        "artist": "Eleanor Avery, James Avery",
+        "artist_list": "E, Eleanor Avery, James Avery",
+        "location": "Roma Street, Brisbane CBD",
+        "material": "aluminium",
+        "description": "Zoom! Zap! and Blat! reference the energy forces within the flow of movement through the Cycle Centre and the dynamics of this energised transitional place.",
+        "installed": "2007",
+        "latitude": -27.467958,
+        "longitude": 153.023421,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023421,
+            "lat": -27.467958
+        }
+    },
+    {
+        "index": 158,
+        "item_title": "The Human Factor Series - The Trapeze Artist",
+        "item_title_list": "T, The Human Factor Series - The Trapeze Artist",
+        "artist": "John Underwood, Artbusters",
+        "artist_list": "J, John Underwood, Artbusters",
+        "location": "King George Square, Brisbane CBD",
+        "material": "aluminium",
+        "description": "The Human Factor series was created by Brisbane's Artbusters in the late 1980s. The first iterations of this iconic series were installed throughout the World Expo 88 site.",
+        "installed": "2017",
+        "latitude": -27.46855,
+        "longitude": 153.024829,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.024829,
+            "lat": -27.46855
+        }
+    },
+    {
+        "index": 159,
+        "item_title": "The Human Factor Series - The Juggler",
+        "item_title_list": "T, The Human Factor Series - The Juggler",
+        "artist": "John Underwood, Artbusters",
+        "artist_list": "J, John Underwood, Artbusters",
+        "location": "King George Square, Brisbane CBD",
+        "material": "aluminium",
+        "description": "The cushion is designed with a tartan pattern that appropriates the surrounding geographical Streets, Avenues and Terraces of the Paddington district. It also honours the history the original inhabitants, the Turrbal people, whose pathways were built upon to form Brisbane's road infrastructure.",
+        "installed": "2017",
+        "latitude": -27.468068,
+        "longitude": 153.0243,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.0243,
+            "lat": -27.468068
+        }
+    },
+    {
+        "index": 167,
+        "item_title": "Cr Clem Jones",
+        "item_title_list": "C, Cr Clem Jones",
+        "artist": "Phillip Piperides",
+        "artist_list": "P, Phillip Piperides",
+        "location": "Adelaide Street, Brisbane CBD",
+        "material": "bronze",
+        "description": "Bronze sculpture depicting Dr Clem Jones, donated by the Clem Jones Group in 2018.",
+        "installed": "2018",
+        "latitude": -27.469377,
+        "longitude": 153.023653,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.023653,
+            "lat": -27.469377
+        }
+    },
+    {
+        "index": 200,
+        "item_title": "Art Signs",
+        "item_title_list": "A, Art Signs",
+        "artist": "Richard Tipping",
+        "artist_list": "R, Richard Tipping",
+        "location": "Queen Street Mall, Brisbane CBD",
+        "material": "aluminium",
+        "description": "A series of five artworks that use official signate templates to jump start dull meanings into new visual poetics as conversation starters.",
+        "installed": "2023",
+        "latitude": -27.46973256,
+        "longitude": 153.0252102,
+        "suburb": "Brisbane City",
+        "suburb_list": "B, Brisbane City",
+        "geolocation": {
+            "lon": 153.0252102,
+            "lat": -27.46973256
+        }
+    }
+]

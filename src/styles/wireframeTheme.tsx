@@ -4,10 +4,10 @@ export const wireframeTheme = createTheme({
   cssVariables: true,
   palette: {
     primary: {
-      main: "#0000FF", // Custom primary color
+      main: "#002E53", // Custom primary color
     },
     secondary: {
-      main: "#EEF2F5", // Custom secondary color
+      main: "#0067B1", // Custom secondary color
     },
     text: {
       primary: "#173A5E",
@@ -16,13 +16,14 @@ export const wireframeTheme = createTheme({
   },
   typography: {
     fontFamily: [
-      "TT Norm", // Primary font
+      "Figtree", // Primary font
       "sans-serif", // Fallback font
     ].join(","),
-    h1: { fontSize: "56px", marginBottom: "24px", fontWeight: "800" },
-    h2: { fontSize: "48px", marginBottom: "16px", fontWeight: "700" },
+    h1: { fontSize: "56px", marginBottom: "24px", fontWeight: "700" },
+    h2: { fontSize: "48px", marginBottom: "16px", fontWeight: "600" },
     h3: { fontSize: "32px", marginBottom: "16px" },
     h4: { fontSize: "24px", marginBottom: "8px" },
+    h5: { fontSize: "18px", marginBottom: "8px", fontWeight: "600" },
     body1: { fontSize: "1rem", fontWeight: "500", lineHeight: "1.3" },
     body2: { fontSize: "16px", fontWeight: "500" },
   },
@@ -40,7 +41,7 @@ export const wireframeTheme = createTheme({
           fontWeight: "600",
         },
         startIcon: {
-          marginRight: "16px",
+          marginRight: "8px",
         },
       },
     },

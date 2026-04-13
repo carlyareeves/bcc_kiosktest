@@ -1,4 +1,4 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -16,11 +16,11 @@ function Transport() {
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current!,
       center: [153.0227378820481, -27.47089294758758],
-      zoom: 18,
+      zoom: 17,
       config: {
         basemap: {
           theme: "monochrome",
-          font: "Noto Sans",
+          font: "Figtree",
           show3dObjects: false,
           showPlaceLabels: false,
           showPointofInterestLabels: false,
@@ -47,36 +47,38 @@ function Transport() {
   }, []);
 
   return (
-    <>
-      <Stack direction="column" sx={{ height: "100%" }}>
-        <Stack
-          direction="column"
-          sx={{
-            padding: "40px 0",
-            backgroundColor: "var(--secondary-Rockpool)",
-          }}
-        >
-          <Container>
-            <Typography variant="h2">Transport</Typography>
-            <Typography variant="h3">
-              Stops and hubs - Mapbox with walking directions generated on
-              selection of POI
-            </Typography>
-          </Container>
-        </Stack>
-        <Container>
-          <Stack
-            direction="row"
-            sx={{
-              padding: "20px 0",
-            }}
-          >
-            <ButtonFilter />
-          </Stack>
-        </Container>
-        <div className="map_wrapper" ref={mapContainerRef}></div>
+    <Stack
+      direction="column"
+      sx={{
+        height: "100%",
+        background:
+          "linear-gradient(154deg, var(--solids-white, rgba(255, 255, 255, 0.20)) 6.6%, rgba(0, 46, 83, 0.20) 80.53%), radial-gradient(42% 70.39% at 74% 28.65%, var(--brandSecondary-deepOcean, rgba(0, 46, 83, 0.20)) 0%, var(--brandSecondary-rockPool, rgba(236, 245, 251, 0.20)) 100%), radial-gradient(30.95% 68.47% at 28.68% 82.78%, var(--brandSecondary-sky, #D4E7F4) 0%, var(--brandSecondary-mist, #F8FCFF) 100%);",
+      }}
+    >
+      <Stack
+        direction="column"
+        sx={{
+          padding: "80px 40px 16px",
+          gap: "16px",
+        }}
+      >
+        <Typography sx={{ fontSize: "56px", fontWeight: "600" }}>
+          Public transport
+        </Typography>
+        <Typography sx={{ fontSize: "28px" }}>
+          Explore transport options across Brisbane City
+        </Typography>
+        <ButtonFilter />
       </Stack>
-    </>
+      <Box
+        sx={{
+          padding: "0 40px",
+          height: "100%",
+        }}
+      >
+        <div className="map_wrapper" ref={mapContainerRef}></div>
+      </Box>
+    </Stack>
   );
 }
 

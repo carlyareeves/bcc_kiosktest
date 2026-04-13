@@ -82,6 +82,38 @@ function Home() {
             </CardContent>
           </Card>
         </Grid>
+        <Grid size={4} component={RouterLink} to="/walks">
+          <Card
+            variant="outlined"
+            sx={{
+              height: "300px",
+              borderWidth: "8px",
+              borderRadius: "16px",
+              borderColor: "var(--secondary-Rockpool)",
+            }}
+          >
+            <CardMedia
+              sx={{
+                height: 120,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
+                follow_the_signs
+              </Icon>
+            </CardMedia>
+            <CardContent>
+              <Typography variant="h2" align="center">
+                Walks
+              </Typography>
+              <Typography variant="body1" align="center">
+                Discover hidden treasures around you
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
         <Grid size={4} component={RouterLink} to="/transport">
           <Card
             variant="outlined"
@@ -114,7 +146,7 @@ function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={4} component={RouterLink} to="/guides">
+        <Grid size={4} component={RouterLink} to="/art">
           <Card
             variant="outlined"
             sx={{
@@ -133,15 +165,15 @@ function Home() {
               }}
             >
               <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
-                follow_the_signs
+                palette
               </Icon>
             </CardMedia>
             <CardContent>
               <Typography variant="h2" align="center">
-                Guides
+                Public art
               </Typography>
               <Typography variant="body1" align="center">
-                Discover hidden treasures around you
+                Street art, murals, and sculptures
               </Typography>
             </CardContent>
           </Card>
@@ -149,18 +181,30 @@ function Home() {
         <Grid size={4}>
           <Card
             onClick={handleOpen}
-            variant="outlined"
-            sx={{ height: "300px", borderRadius: "8px" }}
+            elevation={0}
+            sx={{
+              height: "300px",
+              borderRadius: "16px",
+              backgroundColor: "var(--secondary-DeepOcean)",
+              alignContent: "center",
+            }}
           >
-            <CardMedia
-              image="/images/Bapp_tile-promo.png"
-              sx={{
-                height: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "flex-end",
-              }}
-            ></CardMedia>
+            <CardContent>
+              <Typography
+                variant="h2"
+                align="center"
+                color="var(--neutral-OffWhite)"
+              >
+                promo
+              </Typography>
+              <Typography
+                variant="h4"
+                align="center"
+                color="var(--primary-Blue)"
+              >
+                ad graphic
+              </Typography>
+            </CardContent>
           </Card>
         </Grid>
         <Grid size={4} component={RouterLink} to="/facilities">
@@ -187,7 +231,7 @@ function Home() {
             </CardMedia>
             <CardContent>
               <Typography variant="h2" align="center">
-                Facilities
+                Amenities
               </Typography>
               <Typography variant="body1" align="center">
                 Public toilet and change places
@@ -223,6 +267,30 @@ function Home() {
               </Typography>
               <Typography variant="body1" align="center">
                 Public parks, gardens, and greenspaces
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid size={8}>
+          <Card
+            elevation={0}
+            sx={{
+              height: "300px",
+              borderRadius: "16px",
+              backgroundColor: "var(--primary-Yellow)",
+              alignContent: "center",
+            }}
+          >
+            <CardContent>
+              <Typography variant="h2" align="center">
+                around you
+              </Typography>
+              <Typography
+                variant="h4"
+                align="center"
+                color="var(--primary-Blue)"
+              >
+                ad graphic
               </Typography>
             </CardContent>
           </Card>

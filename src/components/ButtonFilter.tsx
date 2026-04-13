@@ -1,60 +1,46 @@
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import { DirectionsBoat, DirectionsBus, Train } from "@mui/icons-material";
+import { Button, Icon, Stack } from "@mui/material";
 
 function ButtonFilter() {
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction={"row"}>
       <Button
-        variant="contained"
+        disableElevation
+        startIcon={<Icon sx={{ color: "secondary.main" }}>directions_bus</Icon>}
         sx={{
-          borderRadius: 999,
-          padding: "10px 20px",
-          textTransform: "none",
-          fontSize: "28px",
-          color: "white",
-          backgroundColor: "blue",
-          boxShadow: "none",
-          "&:hover": { boxShadow: "none", color: "white" },
+          padding: "4px 24px",
+          borderRadius: "99px 0 0 99px;",
+          border: "3px solid var(--secondary-Sky)",
+          backgroundColor: "white",
         }}
       >
-        <Stack direction="row" sx={{ gap: 1, alignItems: "center" }}>
-          <Train /> <span>Train</span>
-        </Stack>
+        Bus
       </Button>
       <Button
-        variant="contained"
+        startIcon={
+          <Icon sx={{ color: "secondary.main" }}>directions_boat</Icon>
+        }
         sx={{
-          borderRadius: 999,
-          padding: "10px 20px",
-          textTransform: "none",
-          fontSize: "28px",
-          color: "white",
-          backgroundColor: "blue",
-          boxShadow: "none",
-          "&:hover": { boxShadow: "none", color: "white" },
+          padding: "4px 24px",
+          borderRadius: "0",
+          borderTop: "3px solid var(--secondary-Sky)",
+          borderBottom: "3px solid var(--secondary-Sky)",
+          backgroundColor: "white",
         }}
       >
-        <Stack direction="row" sx={{ gap: 1, alignItems: "center" }}>
-          <DirectionsBus /> <span>Bus</span>
-        </Stack>
-      </Button>{" "}
+        Ferry
+      </Button>
       <Button
-        variant="contained"
+        startIcon={
+          <Icon sx={{ color: "secondary.main" }}>directions_subway</Icon>
+        }
         sx={{
-          borderRadius: 999,
-          padding: "10px 20px",
-          textTransform: "none",
-          fontSize: "28px",
-          color: "white",
-          backgroundColor: "blue",
-          boxShadow: "none",
-          "&:hover": { boxShadow: "none", color: "white" },
+          padding: "4px 24px",
+          borderRadius: "0 99px 99px 0;",
+          border: "3px solid var(--secondary-Sky)",
+          backgroundColor: "white",
         }}
       >
-        <Stack direction="row" sx={{ gap: 1, alignItems: "center" }}>
-          <DirectionsBoat /> <span>Ferry</span>
-        </Stack>
+        Train
       </Button>
     </Stack>
   );

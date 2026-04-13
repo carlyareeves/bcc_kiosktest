@@ -1,14 +1,19 @@
-import { Button } from "@mui/material";
+import { Icon, IconButton, Stack, Box } from "@mui/material";
+import { Circle } from "@mui/icons-material";
 
 interface PaginationProps {
   currentPage: number;
   totalPages: number;
+  totalItems: number;
+  itemsPlural: string;
   onPageChange: (page: number) => void;
 }
 
 const Pagination: React.FC<PaginationProps> = ({
   currentPage,
   totalPages,
+  totalItems,
+  itemsPlural,
   onPageChange,
 }) => {
   const handleClick = (page: number) => {
@@ -18,32 +23,49 @@ const Pagination: React.FC<PaginationProps> = ({
   };
 
   return (
-    <div className="content_pagination">
-      <Button
-        variant="contained"
-        onClick={() => handleClick(currentPage - 1)}
-        disabled={currentPage === 1}
-      >
-        Previous
-      </Button>
-      {Array.from({ length: totalPages }, (_, index) => (
-        <Button
-          variant="outlined"
-          key={index + 1}
-          onClick={() => handleClick(index + 1)}
-          disabled={currentPage === index + 1}
+    <Stack
+      direction={"row"}
+      alignItems={"center"}
+      justifyContent={"space-between"}
+      sx={{
+        backgroundColor: "var(--neutral-OffWhite)",
+        padding: "8px 16px",
+        marginBottom: "16px",
+        borderRadius: "8px",
+      }}
+    >
+      <Stack direction={"row"} gap={"16px"}>
+        <IconButton
+          size="small"
+          onClick={() => handleClick(currentPage - 1)}
+          disabled={currentPage === 1}
         >
-          {index + 1}
-        </Button>
-      ))}
-      <Button
-        variant="contained"
-        onClick={() => handleClick(currentPage + 1)}
-        disabled={currentPage === totalPages}
-      >
-        Next
-      </Button>
-    </div>
+          <Icon>chevron_left</Icon>
+        </IconButton>
+        <IconButton
+          size="small"
+          onClick={() => handleClick(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          <Icon>chevron_right</Icon>
+        </IconButton>
+      </Stack>
+      <Box>
+        {Array.from({ length: totalPages }, (_, index) => (
+          <IconButton
+            size="small"
+            key={index + 1}
+            onClick={() => handleClick(index + 1)}
+            disabled={currentPage === index + 1}
+          >
+            <Circle />
+          </IconButton>
+        ))}
+      </Box>
+      <Box>
+        {totalItems} {itemsPlural} within 500m
+      </Box>
+    </Stack>
   );
 };
 

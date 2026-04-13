@@ -11,7 +11,7 @@ function Transport() {
   useEffect(() => {
     // Set your Mapbox access token
     mapboxgl.accessToken =
-      "pk.eyJ1IjoicGVyZmVjdDV0aCIsImEiOiJjbTV5ajY1N3MwbWlnMnFweTlyY2E2dno4In0.jO71HPpChh9rcX3uYEL7cg";
+      "pk.eyJ1IjoicGVyZmVjdDV0aCIsImEiOiJjbW53dWl1djgwMDh1MnFxMGU3em44dTM0In0.P_Goyffg2wyy1BYTIzx6tg";
 
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current!,

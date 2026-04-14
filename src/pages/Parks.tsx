@@ -41,22 +41,20 @@ function Parks() {
       <Stack
         direction="column"
         sx={{
-          padding: "0 40px 0",
-          gap: "16px",
+          maxWidth: "100%",
+          padding: "16px 40px",
         }}
       >
         <Box
           sx={{
-            minWidth: "0",
-            padding: "24px",
             backgroundColor: "white",
-            borderRadius: "16px",
+            borderRadius: "16px 16px 0 0",
             overflow: "hidden",
           }}
         >
           <Swiper
             spaceBetween={16}
-            slidesPerView={3.5}
+            slidesPerView={3.25}
             slidesPerGroup={3}
             navigation
             pagination={{
@@ -184,7 +182,6 @@ function Parks() {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <Card
                 elevation={8}
                 sx={{
@@ -204,7 +201,6 @@ function Parks() {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <Card
                 elevation={8}
                 sx={{
@@ -224,7 +220,6 @@ function Parks() {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              {" "}
               <Card
                 elevation={8}
                 sx={{
@@ -244,6 +239,9 @@ function Parks() {
               </Card>
             </SwiperSlide>
           </Swiper>
+        </Box>
+        <Box sx={{ backgroundColor: "white", padding: "24px" }}>
+          Drawer opens below card list
         </Box>
       </Stack>
     </Stack>

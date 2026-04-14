@@ -207,6 +207,15 @@ body {
 }
 /* Swiper */
 .swiper {
-  width: calc(100vw - 192px);
+  width: calc(100vw - 200px);
   overflow: visible !important;
+}
+
+.swiper-wrapper {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  width: 260px !important;
 }/*# sourceMappingURL=App.css.map */

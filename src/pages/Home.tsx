@@ -10,7 +10,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import PromoBapp from "./PromoBapp";
+import PromoMap from "./PromoMap";
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -43,7 +43,7 @@ function Home() {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <PromoBapp />
+        <PromoMap onClose={handleClose} />
       </Modal>
       <Grid
         container
@@ -178,31 +178,34 @@ function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={4}>
+        <Grid size={4} component={RouterLink} to="/facilities">
           <Card
-            onClick={handleOpen}
-            elevation={0}
+            variant="outlined"
             sx={{
               height: "300px",
+              borderWidth: "8px",
               borderRadius: "16px",
-              backgroundColor: "var(--secondary-DeepOcean)",
-              alignContent: "center",
+              borderColor: "var(--secondary-Rockpool)",
             }}
           >
+            <CardMedia
+              sx={{
+                height: 120,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
+                family_restroom
+              </Icon>
+            </CardMedia>
             <CardContent>
-              <Typography
-                variant="h2"
-                align="center"
-                color="var(--neutral-OffWhite)"
-              >
-                promo
+              <Typography variant="h2" align="center">
+                Historical
               </Typography>
-              <Typography
-                variant="h4"
-                align="center"
-                color="var(--primary-Blue)"
-              >
-                ad graphic
+              <Typography variant="body1" align="center">
+                Explore historical buildings and sites
               </Typography>
             </CardContent>
           </Card>
@@ -273,6 +276,7 @@ function Home() {
         </Grid>
         <Grid size={8}>
           <Card
+            onClick={handleOpen}
             elevation={0}
             sx={{
               height: "300px",

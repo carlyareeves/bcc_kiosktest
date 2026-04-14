@@ -74,7 +74,7 @@ const PublicArt: React.FC = () => {
       >
         <Box
           sx={{
-            padding: "24px 32px",
+            padding: "32px",
             backgroundColor: "white",
             borderRadius: "16px",
           }}

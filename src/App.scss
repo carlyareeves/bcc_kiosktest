@@ -190,3 +190,10 @@ body {
   50% {margin-left: 0px;}
   100% {margin-left: 0px;}
 }
+
+/* Swiper */
+
+.swiper {
+  width: calc(100vw - 192px);
+  overflow: visible!important;
+}

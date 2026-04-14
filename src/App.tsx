@@ -19,6 +19,7 @@ import Transport from "./pages/Transport";
 import Facilities from "./pages/Facilities";
 import Walks from "./pages/Walks";
 import Art from "./pages/PublicArt";
+import Parks from "./pages/Parks";
 import PromoMap from "./pages/PromoMap";
 import PromoBapp from "./pages/PromoBapp";
 import DormantFrames from "./pages/DormantFrames";
@@ -32,6 +33,7 @@ function App() {
           <Route path="events" element={<Events />} />
           <Route path="transport" element={<Transport />} />
           <Route path="facilities" element={<Facilities />} />
+          <Route path="parks" element={<Parks />} />
           <Route path="walks" element={<Walks />} />
           <Route path="art" element={<Art />} />
           <Route path="bapp" element={<PromoBapp />} />

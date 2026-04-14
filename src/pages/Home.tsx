@@ -239,7 +239,7 @@ function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={4} component={RouterLink} to="/facilities">
+        <Grid size={4} component={RouterLink} to="/parks">
           <Card
             variant="outlined"
             sx={{

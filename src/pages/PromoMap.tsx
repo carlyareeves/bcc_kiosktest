@@ -1,7 +1,7 @@
 import { Box, Button } from "@mui/material";
 
 interface PromoMapProps {
-  onClose: () => void; // Specify the type explicitly
+  onClose?: () => void; // Specify the type explicitly
 }
 
 function PromoMap({ onClose }: PromoMapProps) {

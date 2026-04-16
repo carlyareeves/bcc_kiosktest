@@ -1,6 +1,5 @@
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import Sidebar from "./Sidebar";
-import { Link as RouterLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import ButtonReload from "../components/ButtonReload";
 
@@ -13,22 +12,6 @@ const RootLayout = () => {
             <div className="promo_content">
               <p>Display Promo EXAMPLE ONLY</p>
               <ButtonReload />
-              <Button
-                component={RouterLink}
-                to="/map"
-                variant="contained"
-                color="secondary"
-              >
-                Map
-              </Button>
-              <Button
-                component={RouterLink}
-                to="/dormant"
-                variant="contained"
-                color="secondary"
-              >
-                Dormant
-              </Button>
             </div>
           </div>
         </Box>

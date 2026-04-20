@@ -23,6 +23,7 @@ import Parks from "./pages/Parks";
 import PromoMap from "./pages/PromoMap";
 import PromoBapp from "./pages/PromoBapp";
 import DormantFrames from "./pages/DormantFrames";
+import Historical from "./pages/Historical";
 
 function App() {
   const router = createBrowserRouter(
@@ -34,6 +35,7 @@ function App() {
           <Route path="transport" element={<Transport />} />
           <Route path="facilities" element={<Facilities />} />
           <Route path="parks" element={<Parks />} />
+          <Route path="historical" element={<Historical />} />
           <Route path="walks" element={<Walks />} />
           <Route path="art" element={<Art />} />
           <Route path="bapp" element={<PromoBapp />} />

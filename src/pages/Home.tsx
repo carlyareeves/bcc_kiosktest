@@ -178,7 +178,7 @@ function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={4} component={RouterLink} to="/facilities">
+        <Grid size={4} component={RouterLink} to="/historical">
           <Card
             variant="outlined"
             sx={{
@@ -197,7 +197,7 @@ function Home() {
               }}
             >
               <Icon sx={{ fontSize: 80, color: "var(--primary-Blue)" }}>
-                family_restroom
+                temple_buddhist
               </Icon>
             </CardMedia>
             <CardContent>
